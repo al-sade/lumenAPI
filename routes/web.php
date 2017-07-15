@@ -11,5 +11,6 @@
 |
 */
 
-$app->get('/api/supplier', 'SupplierController@getSupplier');
+$app->get('/api/supplier', 'SupplierController@getSuppliers');
+$app->get('/api/supplier/22', 'SupplierController@getSuppliersByCategory');
 $app->post('/api/supplier', 'SupplierController@postSupplier');

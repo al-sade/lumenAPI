@@ -11,5 +11,8 @@ class Controller extends BaseController
         return response()->json(['data' => $data], $code);
     }
 
+        public function createErrorMessage($message, $code){
+            return response()->json(['message' => $message, 'code' => $code], $code);
+        }
 
 }

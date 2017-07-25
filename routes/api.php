@@ -17,7 +17,7 @@
 -------------------------
 */
 
-$app->get('/api/supplier', 'SupplierController@getSuppliers');
+$app->get('/api/suppliers/{category_id}', 'SupplierController@getSuppliers');
 
 $app->get('/api/supplier/{supplier_id}', 'SupplierController@getSuppliersByCategory');
 
@@ -26,9 +26,27 @@ $app->post('/api/supplier', 'SupplierController@postSupplier');
 
 /*
 ----------------------------
------ testimonials API -----
+----- Testimonials API -----
 ----------------------------
 */
 
 $app->get('/api/testimonials', 'TestimonialsController@getTestimonials');
 $app->get('/api/testimonials/{supplier_id}', 'TestimonialsController@getTestimonialsBySupplier');
+
+/*
+----------------------------
+------ Categories API ------
+----------------------------
+*/
+
+$app->get('/api/categories', 'CategoryController@getCategories');
+
+
+/*
+-------------------------------
+----- Recommendations API -----
+-------------------------------
+*/
+
+$app->get('/api/recommendations/', 'RecommendationsController@getRecommendations');
+

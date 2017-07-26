@@ -18,6 +18,7 @@
 */
 
 $app->get('/api/suppliers/{category_id}', 'SupplierController@getSuppliers');
+$app->get('/api/suppliers', 'SupplierController@getAllSuppliers');
 
 $app->get('/api/supplier/{supplier_id}', 'SupplierController@getSuppliersByCategory');
 

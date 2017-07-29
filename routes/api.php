@@ -18,6 +18,7 @@
 */
 
 $app->get('/api/suppliers/{category_id}', 'SupplierController@getSuppliers');
+
 $app->get('/api/suppliers', 'SupplierController@getAllSuppliers');
 
 $app->get('/api/supplier/{supplier_id}', 'SupplierController@getSuppliersByCategory');
@@ -32,6 +33,7 @@ $app->post('/api/supplier', 'SupplierController@postSupplier');
 */
 
 $app->get('/api/testimonials', 'TestimonialsController@getTestimonials');
+
 $app->get('/api/testimonials/{supplier_id}', 'TestimonialsController@getTestimonialsBySupplier');
 
 /*

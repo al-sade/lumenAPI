@@ -53,3 +53,15 @@ $app->get('/api/categories', 'CategoryController@getCategories');
 
 $app->get('/api/recommendations/', 'RecommendationsController@getRecommendations');
 
+
+/*
+-------------------------------
+----- Mailing API -----
+-------------------------------
+*/
+
+//$app->get('/api/mail/', 'MailController@sendMail');
+$app->post('/api/mail/', 'MailController@sendMail');
+
+
+
